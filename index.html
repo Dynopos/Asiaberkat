@@ -33,7 +33,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"></noscript>
-<link rel="stylesheet" href="css/style.css?v=20261122-5">
+<link rel="stylesheet" href="css/style.css?v=20261122-6">
 <script>document.documentElement.classList.add('js')</script>
 <script type="application/ld+json">
 {
@@ -365,6 +365,8 @@
   <symbol id="i-waze" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M20 11.5c0-4.4-3.6-7.5-8-7.5s-8 3.1-8 7.5c0 1.7-.8 3-2 3.6.9 1.6 2.6 2.7 4.6 2.9A2 2 0 0 0 10.4 18h3.2a2 2 0 0 0 3.8 0c1.8-.7 2.6-2.6 2.6-6.5Z"/><circle cx="9.5" cy="10" r="1" fill="currentColor"/><circle cx="14.5" cy="10" r="1" fill="currentColor"/></symbol>
   <symbol id="i-tiktok" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 2h-3.3v13.2a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9a6.3 6.3 0 1 0 5.3 6.2V8.6a7.9 7.9 0 0 0 4.4 1.4V6.7a4.5 4.5 0 0 1-4.4-4.7Z"/></symbol>
   <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5.2l3.4 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.1v13.8a1 1 0 0 0 1.5.9l10.6-6.9a1 1 0 0 0 0-1.7L9.5 4.2A1 1 0 0 0 8 5.1Z"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path fill="currentColor" d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></symbol>
   <symbol id="i-img" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="9" cy="10" r="1.6" fill="currentColor"/><path d="m4 17 5-4.5 4 3.5 3-2.5 4 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
 </svg>
 
@@ -402,6 +404,24 @@
         <div class="hero__actions">
           <a class="btn btn--red btn--lg" href="https://wa.me/60173805112?text=Hai%20Asia%20Berkat%2C%20saya%20nak%20bertanya%20tentang%20urusan%20telco." data-wa target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg> Hubungi Kami</a>
           <a class="btn btn--ghost btn--lg" href="#lokasi"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg> Lihat Lokasi Kedai</a>
+        </div>
+        <div class="vn" id="vn" hidden>
+          <button class="vn__play" id="vnPlay" type="button" aria-label="Main lagu Asia Berkat">
+            <svg class="ico ico--play" aria-hidden="true"><use href="#i-play"/></svg>
+            <svg class="ico ico--pause" aria-hidden="true"><use href="#i-pause"/></svg>
+          </button>
+          <div class="vn__body">
+            <span class="vn__label">♪ Lagu Asia Berkat</span>
+            <div class="vn__track" id="vnTrack" role="slider" tabindex="0" aria-label="Kedudukan lagu" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+              <div class="vn__wave" aria-hidden="true"></div>
+              <div class="vn__fill" id="vnFill" aria-hidden="true"></div>
+            </div>
+          </div>
+          <span class="vn__time" id="vnTime">0:19</span>
+          <audio id="vnAudio" preload="metadata" data-duration="19">
+            <source src="assets/audio/lagu.ogg" type="audio/ogg">
+            <source src="assets/audio/lagu.m4a" type="audio/mp4">
+          </audio>
         </div>
         <ul class="hero__ticks">
           <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Phone serendah RM68 melalui plan</li>
@@ -839,6 +859,6 @@
   <button class="lb__nav lb__next" id="lbNext" type="button" aria-label="Gambar seterusnya">›</button>
 </div>
 
-<script src="js/main.js?v=20261122-4" defer></script>
+<script src="js/main.js?v=20261122-6" defer></script>
 </body>
 </html>

@@ -429,3 +429,18 @@ em{font-style:normal;background:var(--g-text);-webkit-background-clip:text;backg
 .hrs{display:flex;gap:10px;align-items:flex-start;margin:6px 0 4px;padding:10px 12px;border-radius:12px;background:rgba(227,38,47,.1);border:1px solid rgba(227,38,47,.3);font-size:14px;line-height:1.4}
 .hrs .ico{color:var(--red-hi);margin-top:1px}
 .hrs small{color:var(--muted);font-size:12.5px}
+
+/* ---------- Pemain lagu (gaya voice note WhatsApp) ---------- */
+.vn{display:flex;align-items:center;gap:12px;margin-top:20px;max-width:420px;padding:10px 16px 10px 10px;border-radius:999px;background:rgba(10,10,13,.6);border:1px solid var(--line-red);backdrop-filter:blur(10px)}
+.vn__play{position:relative;width:44px;height:44px;flex:none;display:grid;place-items:center;border-radius:50%;background:var(--g-red);color:#fff;box-shadow:0 6px 18px -6px rgba(227,38,47,.8)}
+.vn__play .ico{width:20px;height:20px}
+.vn__play .ico--pause,.vn.is-playing .vn__play .ico--play{display:none}
+.vn.is-playing .vn__play .ico--pause{display:block}
+.vn.is-playing .vn__play::after,.vn.is-waiting .vn__play::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:2px solid var(--red-hi);animation:ring 1.6s infinite}
+.vn__body{flex:1;min-width:0}
+.vn__label{display:block;font-size:11.5px;font-weight:800;color:var(--red-hi);letter-spacing:.04em;margin-bottom:5px}
+.vn__track{position:relative;height:22px;cursor:pointer;--wave:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='22'%3E%3Cg fill='%23000'%3E%3Crect x='0' y='8' width='3' height='6' rx='1.5'/%3E%3Crect x='6' y='5' width='3' height='12' rx='1.5'/%3E%3Crect x='12' y='2' width='3' height='18' rx='1.5'/%3E%3Crect x='18' y='6' width='3' height='10' rx='1.5'/%3E%3Crect x='24' y='9' width='3' height='4' rx='1.5'/%3E%3Crect x='30' y='4' width='3' height='14' rx='1.5'/%3E%3Crect x='36' y='1' width='3' height='20' rx='1.5'/%3E%3Crect x='42' y='5' width='3' height='12' rx='1.5'/%3E%3Crect x='48' y='8' width='3' height='6' rx='1.5'/%3E%3Crect x='54' y='3' width='3' height='16' rx='1.5'/%3E%3Crect x='60' y='7' width='3' height='8' rx='1.5'/%3E%3Crect x='66' y='2' width='3' height='18' rx='1.5'/%3E%3Crect x='72' y='6' width='3' height='10' rx='1.5'/%3E%3Crect x='78' y='9' width='3' height='4' rx='1.5'/%3E%3Crect x='84' y='4' width='3' height='14' rx='1.5'/%3E%3Crect x='90' y='7' width='3' height='8' rx='1.5'/%3E%3Crect x='96' y='2' width='3' height='18' rx='1.5'/%3E%3Crect x='102' y='5' width='3' height='12' rx='1.5'/%3E%3Crect x='108' y='8' width='3' height='6' rx='1.5'/%3E%3Crect x='114' y='4' width='3' height='14' rx='1.5'/%3E%3C/g%3E%3C/svg%3E")}
+.vn__wave,.vn__fill{position:absolute;inset:0;-webkit-mask:var(--wave) repeat-x center/auto 100%;mask:var(--wave) repeat-x center/auto 100%}
+.vn__wave{background:rgba(201,204,212,.35)}
+.vn__fill{background:var(--g-red);clip-path:inset(0 calc(100% - var(--p,0%)) 0 0);transition:clip-path .15s linear}
+.vn__time{font:700 12px/1 var(--f-body);color:var(--silver);font-variant-numeric:tabular-nums;min-width:34px;text-align:right}

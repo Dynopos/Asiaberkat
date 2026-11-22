@@ -25,16 +25,21 @@ Tema ikut logo ABE: merah · hitam · perak. Mesra telefon, pantas (gambar WebP)
 | Harga pakej | Bahagian `<!-- ============ PAKEJ ============ -->` dalam `index.html`, dan `llms.txt` |
 | Gambar | Letak fail baharu dalam `assets/img/` (WebP disyorkan, nisbah 4:5) dan tukar nama fail dalam `index.html` |
 | Soalan lazim | Dalam `index.html` (`<details>`) **dan** blok JSON-LD `FAQPage` di bahagian `<head>` — pastikan sama |
+| Lagu | Ganti `assets/audio/lagu.ogg` dan `assets/audio/lagu.m4a` (kedua-dua format perlu — iPhone guna M4A). Kemas kini `data-duration` (saat) pada `<audio id="vnAudio">` dalam `index.html` |
 | Waktu operasi | Cari `9:00 pagi` dalam `index.html` (lokasi, Hubungi, Fakta, footer, Soalan Lazim) dan `openingHoursSpecification` dalam JSON-LD, serta `llms.txt` |
 | Domain | Sudah ditetapkan `https://asiaberkat.my`. Jika bertukar, cari & ganti dalam `index.html`, `robots.txt`, `sitemap.xml`, `llms.txt` |
 
 Selepas ubah CSS/JS, naikkan nombor `?v=20261122-2` dalam `index.html` supaya pelayar ambil versi baharu.
+
+## Lagu di hero
+Pemain gaya voice note WhatsApp. Pelayar (Chrome/Safari) **tidak membenarkan bunyi dimain sendiri** sebelum pelawat menyentuh laman — tiada laman web boleh memaksanya. Jadi lagu akan mula **pada sentuhan/klik pertama** di mana-mana bahagian laman (skrol tidak dikira). Butang main berdenyut merah sementara menunggu. Jika pelawat jeda, lagu tidak akan main semula sendiri.
 
 ## Struktur fail
 ```
 index.html          laman utama
 css/style.css       gaya
 js/main.js          menu, animasi, peta, lightbox
+assets/audio/       lagu.ogg + lagu.m4a
 assets/img/         logo, gambar pelanggan, poster, logo telco, og-image.jpg
 404.html, robots.txt, sitemap.xml, llms.txt, site.webmanifest, ikon
 ```

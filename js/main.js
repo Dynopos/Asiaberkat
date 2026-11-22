@@ -99,5 +99,53 @@
   lb.addEventListener('touchstart', e => { sx = e.touches[0].clientX; }, { passive: true });
   lb.addEventListener('touchend', e => { const dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 50 && list.length > 1) step(dx < 0 ? 1 : -1); });
 
+  /* ---------- Lagu (pemain gaya voice note) ---------- */
+  const vn = $('#vn'), audio = $('#vnAudio');
+  if (vn && audio) {
+    const play = $('#vnPlay'), track = $('#vnTrack'), time = $('#vnTime');
+    const fmt = s => { s = Math.max(0, Math.floor(isFinite(s) ? s : 0)); return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); };
+    /* Chrome kadang-kadang melaporkan tempoh OGG sebagai Infinity → guna data-duration */
+    const dur = () => (isFinite(audio.duration) && audio.duration > 0) ? audio.duration : +audio.dataset.duration || 0;
+    const sync = () => {
+      const d = dur(), p = d ? Math.min(100, (audio.currentTime / d) * 100) : 0;
+      track.style.setProperty('--p', p + '%');
+      track.setAttribute('aria-valuenow', String(Math.round(p)));
+      time.textContent = fmt(audio.paused && !audio.currentTime ? d : audio.currentTime);
+    };
+    const ready = () => { vn.hidden = false; sync(); };   // papar hanya jika audio boleh dimuat
+    audio.addEventListener('loadedmetadata', ready);
+    if (audio.readyState >= 1) ready();
+    audio.addEventListener('timeupdate', sync);
+    audio.addEventListener('play', () => { vn.classList.add('is-playing'); play.setAttribute('aria-label', 'Jeda lagu'); });
+    audio.addEventListener('pause', () => { vn.classList.remove('is-playing'); play.setAttribute('aria-label', 'Main lagu Asia Berkat'); });
+    audio.addEventListener('ended', () => { audio.currentTime = 0; sync(); });
+    play.addEventListener('click', () => { audio.paused ? audio.play().catch(() => {}) : audio.pause(); });
+    const seek = x => { const r = track.getBoundingClientRect(), d = dur(); if (d) audio.currentTime = Math.min(1, Math.max(0, (x - r.left) / r.width)) * d; sync(); };
+    track.addEventListener('click', e => seek(e.clientX));
+    track.addEventListener('keydown', e => {
+      if (!dur()) return;
+      if (e.key === 'ArrowRight') { audio.currentTime = Math.min(dur(), audio.currentTime + 3); e.preventDefault(); }
+      if (e.key === 'ArrowLeft') { audio.currentTime = Math.max(0, audio.currentTime - 3); e.preventDefault(); }
+      if (e.key === ' ' || e.key === 'Enter') { play.click(); e.preventDefault(); }
+      sync();
+    });
+
+    /* Auto-main: pelayar menyekat bunyi sebelum interaksi. Cuba terus; jika disekat, main pada
+       sentuhan/klik/kekunci PERTAMA di mana-mana (bukan skrol). Sekali sahaja; jeda pelawat dihormati. */
+    let started = false;
+    const EVTS = ['pointerdown', 'pointerup', 'touchend', 'click', 'keydown'];
+    const disarm = () => { EVTS.forEach(t => document.removeEventListener(t, onFirst, true)); vn.classList.remove('is-waiting'); };
+    audio.addEventListener('play', () => { started = true; disarm(); });
+    function onFirst(e) {
+      if (started) return disarm();
+      if (e.type === 'keydown' && e.key === 'Escape') return;
+      if (e.target.closest && e.target.closest('#vn')) return; // butang sendiri mengurus main/jeda
+      audio.play().catch(() => {});
+    }
+    const arm = () => { if (started) return; vn.classList.add('is-waiting'); EVTS.forEach(t => document.addEventListener(t, onFirst, true)); };
+    const pr = audio.play();
+    if (pr && pr.catch) pr.catch(arm); else if (audio.paused) arm();
+  }
+
   const yr = $('#yr'); if (yr) yr.textContent = new Date().getFullYear();
 })();
