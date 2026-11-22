@@ -23,6 +23,12 @@
 - Prabayar CelcomDigi 5G: Hyper 30 (RM30), Hyper 35 (RM35), Power 35 (RM35), Power 45 (RM45), Power+ 55 (RM55), Power+ 65 (RM65)
 - U Mobile ULTRA5G pascabayar: ULTRA Postpaid 45 (RM45, 500GB), ULTRA Postpaid 68 (RM68, 1,000GB), ULTRA Global 98 (RM98, 1,000GB + roaming 60+ destinasi), ULTRA Family 128 (RM128, 4 talian, 1,000GB dikongsi)
 - U Mobile ULTRA Family 128 + 2 telefon 5G RM0: OPPO A6 + OPPO A6T; Xiaomi REDMI Note 17 Pro + REDMI 15C; realme 16T x2
+- Telefon 5G RM0 dengan ULTRA Postpaid 68: realme C100, Vivo Y11, Samsung Galaxy A07
+- Telefon 5G RM0 dengan ULTRA Global 98: Honor 600 Lite, OPPO A6, Redmi Note 17 Pro, realme 16T, HONOR 600S, Redmi Note 17
+- Telefon 5G RM0 dengan ULTRA Family 128: vivo V80 Lite, HONOR X9e Pro, Honor 600, Vivo V70, realme Pad 3, Xiaomi 17T, Samsung Galaxy A57, OPPO Reno16 F, Redmi Note 17 Pro Max
+- ULTRA Family Beli 1 Percuma 1: cth. Samsung Galaxy S26 FE x2 (RM89/bln), Xiaomi 17T Pro x2 (RM89/bln), vivo X300 Ultra + X300 FE (RM189/bln)
+- iPhone dengan pelan U Mobile: iPhone 16e dari RM38/bln hingga iPhone Duo dari RM227/bln
+- ULTRA5G Trial percuma: 10GB + panggilan tempatan tanpa had 7 hari (eSIM); Device Care dari RM4/bln
 - Port-in U Mobile: diskaun RM10 x 12 bulan + rebat RM120
 - Internet rumah U Mobile: ULTRA Home 5G RM68/bln (1,000GB FUP, router WiFi 6), ULTRA Home 5G Pro RM98/bln (2,000GB FUP, router WiFi 7)
 
