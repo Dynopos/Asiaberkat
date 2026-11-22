@@ -1,6 +1,6 @@
 /* =========================================================
    Asia Berkat Enterprise — Premium Bento (warna logo ABE)
-   Tema: Merah · Hitam · Perak   |   Mobile-first
+   Tema: Latar putih-perak · warna tema hitam & merah   |   Mobile-first
    ========================================================= */
 :root{
   --ink-950:#07070a;
@@ -9,21 +9,22 @@
   --ink-700:#202028;
   --ink-600:#2c2c36;
   --red:#e3262f;
-  --red-hi:#ff6b6f;
+  --red-hi:#d41f29;
   --red-lo:#a5121b;
-  --silver:#c9ccd4;
-  --silver-hi:#f1f2f5;
-  --text:#f4f4f6;
-  --muted:#a4a7b2;
-  --line:rgba(201,204,212,.13);
-  --line-red:rgba(227,38,47,.5);
+  --silver:#5f6371;
+  --silver-hi:#16161c;
+  --text:#141418;
+  --muted:#5d6170;
+  --line:rgba(20,20,30,.1);
+  --line-red:rgba(227,38,47,.45);
   --g-red:linear-gradient(115deg,#b3131d 0%,#e3262f 40%,#ff5a60 60%,#d01f28 100%);
-  --g-text:linear-gradient(100deg,#ff4b52,#ff8a8d 50%,#ff3640);
+  --g-text:linear-gradient(100deg,#c8121c,#ec333b 50%,#b10f18);
+  --g-text-dk:linear-gradient(100deg,#ff4b52,#ff8a8d 50%,#ff3640);
   --g-silver:linear-gradient(115deg,#7e828e,#eef0f4 45%,#a9adb8 70%,#e2e4ea);
-  --g-card:linear-gradient(150deg,rgba(44,44,54,.6),rgba(18,18,23,.85));
+  --g-card:linear-gradient(160deg,#ffffff,#f3f4f7);
   --wa:#25d366;
   --r-xl:26px;--r-lg:20px;--r-md:14px;--r-sm:12px;
-  --shadow:0 20px 50px -22px rgba(0,0,0,.8);
+  --shadow:0 18px 40px -24px rgba(20,20,40,.35);
   --ease:cubic-bezier(.2,.7,.2,1);
   --f-head:'Sora','Manrope',ui-sans-serif,system-ui,sans-serif;
   --f-body:'Manrope',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
@@ -31,15 +32,14 @@
 }
 *,*::before,*::after{box-sizing:border-box}
 [hidden]{display:none!important}
-html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 12px);-webkit-text-size-adjust:100%}
+html{background:#e3e6eb;scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 12px);-webkit-text-size-adjust:100%}
 body{
   margin:0;color:var(--text);font:400 15px/1.65 var(--f-body);
   background:
-    radial-gradient(ellipse 70% 40% at 90% -5%,rgba(227,38,47,.22),transparent 65%),
-    radial-gradient(ellipse 60% 35% at 0% 35%,rgba(120,120,140,.12),transparent 70%),
-    radial-gradient(ellipse 60% 40% at 100% 85%,rgba(227,38,47,.1),transparent 70%),
-    var(--ink-900);
-  background-attachment:fixed;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+    radial-gradient(ellipse 70% 40% at 90% -5%,rgba(227,38,47,.08),transparent 65%),
+    radial-gradient(ellipse 60% 40% at 0% 40%,rgba(150,156,170,.18),transparent 70%),
+    linear-gradient(180deg,#ffffff 0%,#f1f2f5 45%,#e3e6eb 100%);
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
 }
 img,iframe{display:block;max-width:100%}
 img{height:auto}
@@ -444,3 +444,76 @@ em{font-style:normal;background:var(--g-text);-webkit-background-clip:text;backg
 .vn__wave{background:rgba(201,204,212,.35)}
 .vn__fill{background:var(--g-red);clip-path:inset(0 calc(100% - var(--p,0%)) 0 0);transition:clip-path .15s linear}
 .vn__time{font:700 12px/1 var(--f-body);color:var(--silver);font-variant-numeric:tabular-nums;min-width:34px;text-align:right}
+
+/* =========================================================
+   TEMA CERAH — latar putih/perak, aksen hitam & merah
+   ========================================================= */
+.btn--ghost{border-color:rgba(20,20,30,.2);color:#141418;background:rgba(255,255,255,.75)}
+.btn--ghost:hover{background:#fff;border-color:var(--red)}
+.btn--line{border-color:rgba(20,20,30,.2);color:#141418;background:#fff}
+.btn--line:hover{border-color:#141418;background:#fff}
+.nav{background:rgba(255,255,255,.78)}
+.nav.is-scrolled{background:rgba(255,255,255,.96);box-shadow:0 10px 30px -18px rgba(20,20,40,.35)}
+.burger{background:#fff}
+.menu{background:rgba(255,255,255,.98);box-shadow:0 20px 30px -20px rgba(20,20,40,.3)}
+.menu a:not(.btn){color:#2c2f38}
+@media (min-width:1024px){.menu{background:none;box-shadow:none}}
+.tile::before{background:linear-gradient(140deg,rgba(227,38,47,.35),transparent 35%,transparent 65%,rgba(140,146,160,.35))}
+.tag{background:rgba(227,38,47,.07);border-color:rgba(227,38,47,.28);color:#b3131d}
+.list li{color:#33363f}
+.list b{color:#111}
+.tile--hero{background:radial-gradient(ellipse 90% 70% at 100% 0%,rgba(227,38,47,.16),transparent 60%),radial-gradient(ellipse 60% 60% at 0% 100%,rgba(150,156,170,.2),transparent 70%),linear-gradient(160deg,#ffffff,#eceef2)}
+.hero__glow{border-color:rgba(227,38,47,.1);box-shadow:0 0 0 30px rgba(227,38,47,.04)}
+.hero__glow::after{border-color:rgba(20,20,30,.08)}
+.lead{color:#3a3d48}
+.lead strong{color:#111}
+.tile--promo{color:#fff}
+.faces img{border-color:#fff}
+/* Aksen hitam: statistik */
+.tile--stats{background:#2a2a32;border-color:#111}
+.stat{background:linear-gradient(150deg,#1d1d24,#0f0f13)}
+.stat b{background:var(--g-text-dk);-webkit-background-clip:text;background-clip:text}
+.stat span{color:#a9acb7}
+.marquee{background:rgba(255,255,255,.85)}
+.marquee__track li{color:#2c2f38}
+.telcos{background:linear-gradient(150deg,#ffffff,#eef0f3)}
+.telcos li{border:1px solid var(--line);box-shadow:0 6px 14px -10px rgba(20,20,40,.3)}
+.pkg--feature{background:linear-gradient(150deg,rgba(227,38,47,.07),#ffffff 55%)}
+.pkg__img{background:#e9ebef}
+.price3 div,.pair{background:#f5f6f8}
+.callout{background:rgba(227,38,47,.05);border-color:rgba(227,38,47,.4)}
+.callout p{color:#33363f}
+.callout strong{color:#111}
+.ptable div{background:#fff}
+.ptable div:nth-child(odd){background:#f5f6f8}
+.ptable span:first-child{color:#141418}
+.ptable b{color:var(--red)}
+.pcard__ico,.faq summary::after{background:rgba(227,38,47,.09)}
+.pcard__cta:hover{color:#111}
+.gal button{background:#dfe2e7}
+.step__n{background:linear-gradient(115deg,#141418,#4a4d58);-webkit-background-clip:text;background-clip:text}
+.br.is-on{background:linear-gradient(150deg,rgba(227,38,47,.07),#ffffff)}
+.br__go a{background:#fff;color:#141418}
+.about__lead{color:#2a2d36}
+.facts dd{color:#1b1b22}
+.hrs{background:rgba(227,38,47,.05)}
+.vn{background:rgba(255,255,255,.9)}
+.vn__wave{background:rgba(20,20,30,.18)}
+.vn__time{color:#4a4d58}
+/* Aksen hitam: CTA akhir */
+.cta{color:#fff;background:linear-gradient(150deg,#26262f,#0e0e12);border-color:#111}
+.cta .eyebrow{color:#ff6b6f}
+.cta .sub{color:#b5b8c2}
+.cta em{background:var(--g-text-dk);-webkit-background-clip:text;background-clip:text}
+.cta .btn--ghost{color:#fff;border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.06)}
+/* Aksen hitam: footer */
+.foot{background:#0e0e12;color:#f4f4f6;border-top:3px solid var(--red)}
+.foot .muted,.foot__copy{color:#a4a7b2}
+.foot__reg a{color:#fff}
+.foot__nav{color:#c9ccd4}
+.foot__nav a:hover{color:#ff6b6f}
+.foot .brand__txt small{color:#ff6b6f}
+/* Lightbox kekal gelap */
+.lb__fig figcaption{color:#c9ccd4}
+.lb__x,.lb__nav{color:#fff}
+.tile--logo{background:#fff}
