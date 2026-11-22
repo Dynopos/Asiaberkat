@@ -30,7 +30,14 @@
 - iPhone dengan pelan U Mobile: iPhone 16e dari RM38/bln hingga iPhone Duo dari RM227/bln
 - ULTRA5G Trial percuma: 10GB + panggilan tempatan tanpa had 7 hari (eSIM); Device Care dari RM4/bln
 - Port-in U Mobile: diskaun RM10 x 12 bulan + rebat RM120
-- Internet rumah U Mobile: ULTRA Home 5G RM68/bln (1,000GB FUP, router WiFi 6), ULTRA Home 5G Pro RM98/bln (2,000GB FUP, router WiFi 7)
+- Internet rumah U Mobile ULTRA Home 5G (tanpa pasang kabel, router percuma):
+  - ULTRA Home 5G SIM + router WiFi 6 (bernilai RM799): RM68/bln (asal RM78, rebat promo pelancaran RM10), 1,000GB FUP
+  - ULTRA Home 5G SIM sahaja: RM68/bln, 1,000GB FUP
+  - ULTRA Home 5G Pro: RM98/bln, 2,000GB FUP, router WiFi 7 5G-A 40 antena (bernilai RM1,200), AI Game Turbo, 5G-A 8x8 MIMO (pertama di Malaysia)
+  - Dengan sooka Premium: RM98 (Home 5G) / RM128 (Home 5G Pro)
+  - Kelayakan: 18+, dalam kawasan liputan, tiada tunggakan U Mobile; bukan warganegara deposit RM500
+  - TV Samsung dengan ULTRA Home 5G: 55" dari RM62/bln, 65" RM77, 75" Neo QLED RM190, 85" RM206
+  - Semak liputan: https://www.u.com.my/en/personal/support/coverage-map
 
 ## Soalan lazim
 - Pukul berapa kedai Asia Berkat buka? Semua cawangan Asia Berkat buka setiap hari dari 9:00 pagi hingga 6:00 petang, kecuali hari Jumaat (tutup). Anda juga boleh WhatsApp 017-380 5112 untuk bertanya dahulu.
