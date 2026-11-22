@@ -4,3 +4,4 @@ Thumbs.db
 node_modules/
 s1440-*.png
 s390-*.png
+tools/articles.json

@@ -34,9 +34,24 @@ Selepas ubah CSS/JS, naikkan nombor `?v=20261122-2` dalam `index.html` supaya pe
 ## Lagu di hero
 Pemain gaya voice note WhatsApp. Pelayar (Chrome/Safari) **tidak membenarkan bunyi dimain sendiri** sebelum pelawat menyentuh laman — tiada laman web boleh memaksanya. Jadi lagu akan mula **pada sentuhan/klik pertama** di mana-mana bahagian laman (skrol tidak dikira). Butang main berdenyut merah sementara menunggu. Jika pelawat jeda, lagu tidak akan main semula sendiri.
 
+## Artikel (SEO)
+Tiga artikel panduan di `/artikel/`, setiap satu menyasarkan kata kunci:
+
+| URL | Kata kunci |
+|---|---|
+| `/artikel/telco-paling-bagus-kota-bharu/` | telco paling bagus Kota Bharu |
+| `/artikel/telco-pilihan-kelantan/` | telco pilihan Kelantan |
+| `/artikel/line-phone-paling-ok-kelantan/` | line phone paling ok Kelantan |
+
+Halaman dijana oleh `tools/build_articles.py` (kandungan, FAQ dan data berstruktur Article/FAQPage/Breadcrumb dalam satu tempat).
+Untuk ubah atau tambah artikel: edit senarai `ARTICLES` dalam skrip itu, kemudian jalankan
+`python3 tools/build_articles.py .` dari akar repo. Tambah URL baharu dalam `sitemap.xml` dan kad dalam bahagian `#artikel` di `index.html`.
+Selepas live, hantar sitemap semula di Google Search Console supaya artikel cepat diindeks.
+
 ## Struktur fail
 ```
 index.html          laman utama
+artikel/            halaman artikel SEO (dijana oleh tools/build_articles.py)
 css/style.css       gaya
 js/main.js          menu, animasi, peta, lightbox
 assets/audio/       lagu.ogg + lagu.m4a

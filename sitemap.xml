@@ -6,4 +6,23 @@
     <image:image><image:loc>https://asiaberkat.my/assets/img/og-image.jpg</image:loc></image:image>
     <image:image><image:loc>https://asiaberkat.my/assets/img/logo-480.webp</image:loc></image:image>
   </url>
+  <url>
+    <loc>https://asiaberkat.my/artikel/</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://asiaberkat.my/artikel/telco-paling-bagus-kota-bharu/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://asiaberkat.my/assets/img/c-honor500smart-800.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://asiaberkat.my/artikel/telco-pilihan-kelantan/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://asiaberkat.my/assets/img/c-oppoa6t-a-800.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://asiaberkat.my/artikel/line-phone-paling-ok-kelantan/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <image:image><image:loc>https://asiaberkat.my/assets/img/c-honor600s-b-800.webp</image:loc></image:image>
+  </url>
 </urlset>

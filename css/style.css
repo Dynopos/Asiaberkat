@@ -636,3 +636,60 @@ em{font-style:normal;background:var(--g-text);-webkit-background-clip:text;backg
   .pk--hinfo .specs{grid-column:span 4;align-self:start}
   .pk--hinfo .hinfo{grid-column:span 4}
 }
+
+/* ---------- Artikel ---------- */
+.art-wrap{padding-top:18px;padding-bottom:20px}
+.crumbs{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:13px;color:var(--muted);margin:6px 0 18px}
+.crumbs a{color:#2c2f38;font-weight:700}
+.crumbs a:hover{color:var(--red)}
+.art{max-width:780px;margin:0 auto}
+.art__head h1{font-size:clamp(30px,6vw,46px);margin-top:14px}
+.art__head--list{max-width:780px;margin:0 auto 26px}
+.art__head--list h1{font-size:clamp(32px,6.4vw,52px)}
+.art__meta{color:var(--muted);font-size:13.5px;margin:12px 0 0}
+.art__meta strong{color:#141418}
+.art__img{margin:22px 0 0;border-radius:var(--r-xl);overflow:hidden;background:#e9ebef;box-shadow:var(--shadow);position:relative}
+.art__img img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:50% 30%}
+.art__img figcaption{position:absolute;inset:auto 0 0 0;padding:26px 16px 10px;background:linear-gradient(0deg,rgba(7,7,10,.8),transparent);color:#fff;font-size:12.5px;font-weight:600}
+.art__body{font-size:16.5px;line-height:1.8;color:#24262e}
+.art__body h2{font-size:clamp(22px,4.4vw,28px);margin:38px 0 10px;line-height:1.2}
+.art__body p{margin:12px 0}
+.art__body ul,.art__body ol{margin:12px 0;padding-left:22px}
+.art__body li{margin:7px 0}
+.art__body li::marker{color:var(--red);font-weight:800}
+.art__body a{color:var(--red);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.art__body strong{color:#111}
+.art__lead{font-size:18px;color:#2a2d36;margin-top:24px!important}
+.art__table{margin:16px 0;overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:#fff;-webkit-overflow-scrolling:touch}
+.art__table table{width:100%;border-collapse:collapse;font-size:14.5px;line-height:1.45;min-width:480px}
+.art__table th{background:#141418;color:#fff;text-align:left;padding:11px 14px;font:700 12.5px/1.3 var(--f-body);letter-spacing:.04em}
+.art__table td{padding:11px 14px;border-top:1px solid var(--line);vertical-align:top}
+.art__table tr:nth-child(even) td{background:#f5f6f8}
+.art__table td:last-child{font-weight:800;color:var(--red);white-space:nowrap}
+.art__cta{display:grid;gap:16px;margin:36px 0 0;padding:24px;border-radius:var(--r-xl);color:#fff;background:radial-gradient(ellipse 80% 90% at 0% 0%,rgba(227,38,47,.45),transparent 60%),linear-gradient(150deg,#1f1f27,#0b0b0e 70%)}
+.art__cta .eyebrow{color:#ff6b6f}
+.art__cta b{display:block;margin-top:8px;font:700 22px/1.25 var(--f-head)}
+.art__cta p{margin:8px 0 0;color:#c9ccd4;font-size:14.5px}
+.art__cta-btns{display:flex;flex-wrap:wrap;gap:10px}
+.art__cta .btn--line{background:rgba(255,255,255,.06);color:#fff;border-color:rgba(255,255,255,.3)}
+.art__faq{margin-top:36px}
+.art__faq h2{font-size:clamp(22px,4.4vw,28px);margin-bottom:14px}
+.art__note{color:var(--muted);font-size:12.5px;margin:20px 0 0}
+.art__more{max-width:1100px;margin:56px auto 0}
+.art__more h2{font-size:24px;margin-bottom:14px}
+.acards{display:grid;gap:12px;grid-template-columns:minmax(0,1fr)}
+.acard{display:flex;flex-direction:column;padding:20px;transition:transform .35s var(--ease),border-color .35s}
+.acard:hover{transform:translateY(-4px);border-color:var(--line-red)}
+.acard b{display:block;margin-top:10px;font:700 17px/1.35 var(--f-head);color:#141418}
+.acard p{margin:8px 0 0;color:var(--muted);font-size:14px}
+.acard__go{margin-top:auto;padding-top:14px;font-weight:800;font-size:13.5px;color:var(--red)}
+.acard--img{padding:0}
+.acard--img img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:50% 30%}
+.acard--img > div{display:flex;flex-direction:column;flex:1;padding:18px 20px 20px}
+@media (min-width:700px){
+  .acards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .acards--list,#artikel .acards{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .art__cta{grid-template-columns:minmax(0,1fr) auto;align-items:center;padding:30px}
+}
+.link-red{color:var(--red);font-weight:800}
+.art__cta>*{min-width:0}.art__cta-btns .btn{flex:1 1 auto;white-space:normal;text-align:center}
