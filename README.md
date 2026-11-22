@@ -39,7 +39,29 @@ assets/img/         logo, gambar pelanggan, poster, logo telco, og-image.jpg
 404.html, robots.txt, sitemap.xml, llms.txt, site.webmanifest, ikon
 ```
 
-## Deploy (Netlify — percuma)
-1. Pergi ke app.netlify.com → *Add new site* → *Import from Git* → pilih repo `Dynopos/Asiaberkat` (branch `main`, tiada build command, publish directory `/`). Setiap push ke `main` akan auto-deploy.
-2. Sambung domain `asiaberkat.my` di *Domain settings* (tambah juga `www.asiaberkat.my`), kemudian ikut arahan DNS Netlify di pendaftar domain.
-3. Selepas live: daftar di Google Search Console, hantar `sitemap.xml`, dan letak URL laman dalam Google Business Profile setiap cawangan.
+## Deploy (GitHub Pages — percuma)
+Laman ini di-host terus dari repo `Dynopos/Asiaberkat`, branch `main`. Setiap push ke `main` akan dikemas kini sendiri dalam 1–2 minit.
+
+**Sekali sahaja — hidupkan Pages:**
+1. GitHub → repo `Dynopos/Asiaberkat` → **Settings → Pages**.
+2. *Source*: **Deploy from a branch** → Branch **main**, folder **/ (root)** → **Save**.
+3. *Custom domain*: pastikan tertulis `asiaberkat.my` (dibaca daripada fail `CNAME`).
+4. Selepas DNS aktif dan sijil siap, tandakan **Enforce HTTPS**.
+
+**DNS di pendaftar domain `asiaberkat.my`:**
+
+| Jenis | Nama/Host | Nilai |
+|---|---|---|
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| AAAA | @ | 2606:50c0:8000::153 |
+| AAAA | @ | 2606:50c0:8001::153 |
+| AAAA | @ | 2606:50c0:8002::153 |
+| AAAA | @ | 2606:50c0:8003::153 |
+| CNAME | www | dynopos.github.io |
+
+Buang rekod A/CNAME lama untuk `@` dan `www` (cth. parking page pendaftar). DNS biasanya aktif dalam beberapa minit hingga 24 jam.
+
+**Selepas live:** daftar di Google Search Console, hantar `https://asiaberkat.my/sitemap.xml`, dan letak URL laman dalam Google Business Profile setiap cawangan.
