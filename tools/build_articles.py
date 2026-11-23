@@ -60,9 +60,9 @@ ARTICLES = [
 <ul>
   <li><strong>Prabayar</strong> — tiada semakan kelayakan, kawal belanja, sesuai untuk cuba-cuba.</li>
   <li><strong>Pascabayar</strong> — biasanya lebih banyak data untuk harga sama dan boleh "claim" telefon melalui pelan, tetapi tertakluk kepada semakan kelayakan telco.</li>
-  <li><strong>Pakej telefon + pelan</strong> — contohnya pakej Celcom dengan bayaran muka RM279 dan RM70 sebulan (kontrak 24 bulan), atau Unifi Mobile + Nubia A77 RM59 sebulan + SST.</li>
+  <li><strong>Pakej telefon + pelan</strong> — contohnya pakej Celcom Plan 100 (1,000GB) dengan HONOR 600S: bayaran muka RM100 dan RM80 sebulan untuk 10 bulan pertama (kontrak 24 bulan), atau Unifi Mobile + Nubia A77 RM59 sebulan + SST.</li>
 </ul>
-<p>Pernah ditolak kelayakan? Jangan putus asa — ada pilihan dengan bayaran pendahuluan. Staf kami boleh bantu semak.</p>
+<p>Pernah ditolak kelayakan? Jangan putus asa — ada pilihan dengan bayaran pendahuluan. Staf kami boleh bantu semak. Lihat juga <a href="../../#celcomdigi">senarai pakej telefon Celcom &amp; Digi</a>.</p>
 
 <h2 id="telco-di-kota-bharu">Telco yang boleh anda urus di Kota Bharu</h2>
 <p>Di dua cawangan Asia Berkat di Kota Bharu, anda boleh urus <strong>9 rangkaian</strong> di satu kaunter: Celcom, Digi, Maxis, Hotlink, U Mobile, Unifi Mobile, Tune Talk, XOX dan redONE. Jadi anda boleh bandingkan pilihan secara terus tanpa perlu ke banyak kedai.</p>
@@ -127,7 +127,7 @@ ARTICLES = [
 
 <h2 id="pakej-telefon">Pakej telefon + pelan lain</h2>
 <ul>
-  <li><strong>Celcom</strong> — bayaran muka RM279, bulanan RM70, kontrak 24 bulan. Ada isu kelayakan? Kami bantu semak pilihan.</li>
+  <li><strong>Celcom &amp; Digi (kontrak 2 tahun)</strong> — Plan 100 (1,000GB + panggilan tanpa had) dan Plan 80 (600GB + Viu 12 bulan). Contoh: HONOR 600S muka RM100, Celcom RM80 / Digi RM90 sebulan; nubia V80 Max (4G) muka RM160, Celcom RM59 / Digi RM67 sebulan (bulanan untuk 10 bulan pertama). <a href="../../#celcomdigi">Lihat semua 11 pilihan telefon</a>. Ada isu kelayakan? Kami bantu semak pilihan.</li>
   <li><strong>Unifi Mobile + Nubia A77</strong> — RM59 sebulan + SST. Kelayakan hijau: RM0 pendahuluan. Kelayakan merah: pendahuluan RM180, bulanan RM51.50 + SST selama 24 bulan.</li>
 </ul>
 
@@ -257,7 +257,7 @@ def head(title, desc, canon, rel, ld, og_img):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"></noscript>
-<link rel="stylesheet" href="{rel}css/style.css?v=20261122-11">
+<link rel="stylesheet" href="{rel}css/style.css?v=20261123-1">
 <script type="application/ld+json">
 {json.dumps(ld, ensure_ascii=False, indent=1).replace('</', '<\\/')}
 </script>
