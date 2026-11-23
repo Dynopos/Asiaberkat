@@ -127,7 +127,7 @@ ARTICLES = [
 
 <h2 id="pakej-telefon">Pakej telefon + pelan lain</h2>
 <ul>
-  <li><strong>Celcom &amp; Digi (kontrak 2 tahun)</strong> — Plan 100 (1,000GB + panggilan tanpa had) dan Plan 80 (600GB + Viu 12 bulan). Contoh: HONOR 600S muka RM100, Celcom RM80 / Digi RM90 sebulan; nubia V80 Max (4G) muka RM160, Celcom RM59 / Digi RM67 sebulan (bulanan untuk 10 bulan pertama). <a href="../../#celcomdigi">Lihat semua 11 pilihan telefon</a>. Ada isu kelayakan? Kami bantu semak pilihan.</li>
+  <li><strong>Celcom &amp; Digi (kontrak 2 tahun)</strong> — kedua-duanya kini bergabung sebagai CelcomDigi, tetapi pelan dan harga masih berbeza. Plan 100 (1,000GB + panggilan tanpa had) dan Plan 80 (600GB + Viu 12 bulan). Contoh: HONOR 600S muka RM100, Celcom RM80 / Digi RM90 sebulan; nubia V80 Max (4G) muka RM160, Celcom RM59 / Digi RM67 sebulan (bulanan untuk 10 bulan pertama). <a href="../../#celcomdigi">Lihat semua 11 pilihan telefon</a>. Ada isu kelayakan? Kami bantu semak pilihan.</li>
   <li><strong>Unifi Mobile + Nubia A77</strong> — RM59 sebulan + SST. Kelayakan hijau: RM0 pendahuluan. Kelayakan merah: pendahuluan RM180, bulanan RM51.50 + SST selama 24 bulan.</li>
 </ul>
 
